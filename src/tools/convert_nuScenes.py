@@ -53,7 +53,7 @@ RADARS_FOR_CAMERA = {
   'CAM_BACK_LEFT':   ["RADAR_BACK_LEFT", "RADAR_FRONT_LEFT"],
   'CAM_BACK_RIGHT':  ["RADAR_BACK_RIGHT", "RADAR_FRONT_RIGHT"],
   'CAM_BACK':        ["RADAR_BACK_RIGHT","RADAR_BACK_LEFT"]}
-NUM_SWEEPS = 6
+NUM_SWEEPS = 3
 
 suffix1 = '_{}sweeps'.format(NUM_SWEEPS) if NUM_SWEEPS > 1 else ''
 OUT_PATH = OUT_PATH + suffix1 + '/'
@@ -68,7 +68,7 @@ def _rot_y2alpha(rot_y, x, cx, fx):
     rotation_y : Rotation ry around Y-axis in camera coordinates [-pi..pi]
     """
     alpha = rot_y - np.arctan2(x - cx, fx)
-    if alpha > np.pi:
+    if alpha > np.pi:   
       alpha -= 2 * np.pi
     if alpha < -np.pi:
       alpha += 2 * np.pi

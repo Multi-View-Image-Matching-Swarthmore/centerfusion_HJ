@@ -1,1 +1,0 @@
-2022-07-18-12-24: epoch: 1 |tot 16.302489 | hm 1.174229 | wh 1.762696 | reg 0.222183 | dep 2.659175 | dep_sec 6.135295 | dim 0.236574 | rot 1.655845 | rot_sec 1.924776 | amodel_offset 0.888693 | nuscenes_att 0.434219 | velocity 0.795231 | time 9.233333 | 
